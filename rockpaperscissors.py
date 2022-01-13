@@ -1,6 +1,9 @@
-#rockpapperscissors.py - a simple console game where the user can input commands and play against a computer in Rock Paper Scissors
+#rockpaperscissors.py - a simple console game where the user can input commands and play against a computer in Rock Paper Scissors
 #the application keeps track of wins, losses, ties, and total games
 #This game acts as a review on conditional statements in python
+#Written by: William Shultz
+#January 12, 2022
+
 
 import random, sys
 
