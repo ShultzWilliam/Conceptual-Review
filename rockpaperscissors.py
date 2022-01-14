@@ -2,8 +2,8 @@
 #the application keeps track of wins, losses, ties, and total games
 #This game acts as a review on conditional statements in python
 #Written by: William Shultz
-#January 12, 2022
-
+#Initial Upload: January 12, 2022
+#Last Updated: January 13, 2022
 
 import random, sys
 
