@@ -22,7 +22,11 @@ def binarySearch(inputList: list, target: int) -> int:
 
     return -1
 
-#testList = [-50,-27,-18,0,7,9,11,14,19,22,35,74,115]
-#target = 19
-#test = binarySearch(testList, target)
-#print(f"The target number {target}, for list {testList} is in index {test}.")
+#sample binary search test
+def testBinarySearch()-> str:
+    testList = [-50,-27,-18,0,7,9,11,14,19,22,35,74,115]
+    target = 19
+    test = binarySearch(testList, target)
+    return (f"The target number {target}, for list {testList} is in index {test}.")
+
+#print(testBinarySearch())
