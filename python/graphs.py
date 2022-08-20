@@ -16,6 +16,14 @@ class node:
     def connections(self):
         return self.links
 
+    def rename(self, newValue: str):
+        self.value = newValue
+
+class graph:
+    def __init__(self, name) -> None:
+        self.name = name
+        
+
 a = node("Moon")
 print(a.info())
 print(a.connections())
@@ -29,3 +37,4 @@ b.links.insert(0,a)
 print(f"Moon branches: {a.connections()}")
 print(f"Earth branches: {b.connections()}")
 
+c = graph("SolarSystem")
