@@ -19,9 +19,17 @@ class node:
     def rename(self, newValue: str):
         self.value = newValue
 
+#A graph class consisting of several nodes linked together to one another
 class graph:
-    def __init__(self, name) -> None:
+    def __init__(self, name):
         self.name = name
+        self.nodes = []
+
+    def insertNode(node: node):
+        pass
+
+    def deleteNode(node: node):
+        pass
         
 
 a = node("Moon")
