@@ -3,7 +3,7 @@
 
 #given graph
 
-def depthFirstSearchI(graph, source):       #iterative
+def depthFirstPrintI(graph, source):       #iterative
     #create  stack with the initial node
     
     #while the stack has a node on it
@@ -19,14 +19,23 @@ def depthFirstSearchI(graph, source):       #iterative
             stack.insert(len(stack),i)
             #print(f"Inserted {i} at index {len(stack)}")
 
-def depthFirstSearchR(graph, source):       #recursive
+def depthFirstPrintR(graph, source):       #recursive
     #print the source node
     #for each neighbor of the source node
         #call the function with the neighbor as the source node
     print(source)
     for i in graph[source]:
-        depthFirstSearchR(graph, i)
+        depthFirstPrintR(graph, i)
 
+def breadthFirstPrint(graph, source):
+    #Using a queue instead of a stack, allows us to go throw all branchs at the same time
+    queue = [source]
+
+    while len(queue) > 0:
+        cur = queue.pop(0)
+        print(cur)
+        for i in graph[cur]:
+            queue.append(i)
 
 def testSearches():
     adjacencyList = {
@@ -37,11 +46,13 @@ def testSearches():
     'e':[],
     'f':[]}
 
-    depthFirstSearchI(adjacencyList,'a')
+    depthFirstPrintI(adjacencyList,'a')
     print("")
-    depthFirstSearchR(adjacencyList,'a')
+    depthFirstPrintR(adjacencyList,'a')
+    print("")
+    breadthFirstPrint(adjacencyList,'a')
 
-#testSearches()
+testSearches()
 
 #Depth first works by going as deep into a path as possible, until it reaches a dedad end
 #After reaching the dead end, then it goes back to the original node and takes the next path
@@ -61,3 +72,5 @@ def testSearches():
 #call initial function on source node:
     # for each of source node's neighbors,
     # call the function on a neighbor
+
+
