@@ -1,5 +1,5 @@
 #Code to explore the concepts fo graphs and non-linear data structures
-#Start date: April 19th, 2022
+#Start date: Aug 19th, 2022
 
 #A node class to define the nodes within a graph.
 class node:
