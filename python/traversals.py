@@ -52,7 +52,7 @@ def testSearches():
     print("")
     breadthFirstPrint(adjacencyList,'a')
 
-testSearches()
+#testSearches()
 
 #Depth first works by going as deep into a path as possible, until it reaches a dedad end
 #After reaching the dead end, then it goes back to the original node and takes the next path
